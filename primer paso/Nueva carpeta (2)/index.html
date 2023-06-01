@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tabla Dinámica de Países</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Tabla Dinámica de Países</h1>
+  <button id="reset">Reset</button>
+  <table id="countries-table">
+    <thead>
+      <tr>
+        <th onclick="sortTable(0)">Nombre del país</th>
+        <th onclick="sortTable(1)">Puntaje</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td contenteditable="true">Argentina</td>
+        <td contenteditable="true">100</td>
+      </tr>
+      <tr>
+        <td contenteditable="true">Peru</td>
+        <td contenteditable="true">200</td>
+      </tr>
+      <tr>
+        <td contenteditable="true">Colombia</td>
+        <td contenteditable="true">300</td>
+      </tr>
+      <tr>
+        <td contenteditable="true">Mexico</td>
+        <td contenteditable="true">400</td>
+      </tr>
+      <tr>
+        <td contenteditable="true">Chile</td>
+        <td contenteditable="true">500</td>
+      </tr>
+    </tbody>
+  </table>
+  <button id="add-row">Agregar fila</button>
+  <select id="saved-versions"></select>
+  <button id="save-state">Guardar estado</button>
+  <button id="start-stop">Iniciar</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
